@@ -10,16 +10,19 @@ import Login from "../share/Login";
 import Register from "../share/Register";
 import Detail from "../pages/Detail";
 import PrivateRoute from "./PrivateRoute";
+import Error from "../Error/Error";
+
 
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Root></Root>,
+      errorElement:<Error></Error>,
       children:[
         {
             path:"/",
             element:<Home></Home>,
-            loader:()=>fetch("blogs.json")
+            loader:()=>fetch("/blogs.json")
 
         },
         {
