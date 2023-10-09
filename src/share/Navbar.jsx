@@ -2,10 +2,11 @@ import { Link, NavLink } from "react-router-dom";
 
 
 const Navbar = () => {
-    const navlink =<>
-    <li><NavLink to="/">Home</NavLink></li>
-    <li><NavLink to="/services">Services</NavLink></li>
-    <li><NavLink to="/about">About</NavLink></li>
+    const navlink = <>
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/services">Services</NavLink></li>
+        <li><NavLink to="/about">About</NavLink></li>
+        <li><NavLink to="/register">Register</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -18,15 +19,19 @@ const Navbar = () => {
                         {navlink}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                {navlink}
+                    {navlink}
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to="/login"><button>Login</button></Link>
+
+                <img className="w-12 h-12 rounded-full mr-3" src="https://i.ibb.co/VTPzn98/6128-Anik.jpg" alt="" />
+                
+
+                <Link to="/login"><button className="btn btn-primary">Login</button></Link>
             </div>
         </div>
     );

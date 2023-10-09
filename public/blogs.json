@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Zen Retreat Weekend",
+        "image": "https://i.ibb.co/WFxvbhz/beautiful-girls-are-playing-yoga-park.jpg",
+        "title": "Inner Peace and Relaxation Retreat",
+        "price": 299,
+        "description": "Join us for a rejuvenating weekend getaway focused on meditation, yoga, and mindfulness. Disconnect from the chaos of everyday life and reconnect with your inner self in the tranquil surroundings of our retreat center."
+    },
+    {
+        "id": 2,
+        "name": "Fitness Expo Extravaganza",
+        "image": "https://i.ibb.co/bXdv6ZP/high-angle-senior-women-gym.jpg",
+        "title": "Ultimate Fitness and Wellness Expo",
+        "price": 134,
+        "description": "Explore the latest trends in fitness, nutrition, and wellness at our massive expo. Discover cutting-edge products, attend workshops, and meet industry experts. It's a fitness enthusiast's dream come true!"
+    },
+    {
+        "id": 3,
+        "name": "Holistic Healing Fair",
+        "image": "https://i.ibb.co/26XFdyK/high-angle-man-preparing-yerba-mate.jpg",
+        "title": "Journey to Holistic Wellness",
+        "price": 155,
+        "description": "Dive into the world of holistic healing at our fair. Experience alternative therapies, sample organic foods, and gain insights into holistic living. Discover new paths to overall well-being."
+    },
+    {
+        "id": 4,
+        "name": "Mindful Yoga Retreat",
+        "image": "https://i.ibb.co/GdcYdBh/group-young-yogi-people-sitting-sukhasana-exercise.jpg",
+        "title": "Finding Balance Within",
+        "price": 199,
+        "description": "Immerse yourself in a weekend of yoga, meditation, and self-discovery. This retreat is designed to help you find inner balance and improve your mental and physical well-being."
+    },
+    {
+        "id": 5,
+        "name": "Wellness for Women Symposium",
+        "image": "https://i.ibb.co/x2QH7bm/group-women-doing-sports-outdoor.jpg",
+        "title": "Empowering Women's Health",
+        "price": 310,
+        "description": "Join us for a day of empowering discussions, workshops, and networking. Learn about women's health, self-care, and wellness strategies from leading experts in the field."
+    },
+    {
+        "id": 6,
+        "name": "Healthy Cooking Workshop",
+        "image": "https://i.ibb.co/93cgX8J/lifestyle-people-learning-make-sushi.jpg",
+        "title": "Culinary Wellness Masterclass",
+        "price": 450,
+        "description": "Elevate your culinary skills and nourish your body with our hands-on cooking workshop. Discover how to prepare delicious and nutritious meals that promote well-being and vitality."
+    }
+]
