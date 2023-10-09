@@ -1,12 +1,36 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Provider/AuthProvider";
+import Navbar from "./Navbar";
+
 
 
 const Register = () => {
+    const {createUser} = useContext(AuthContext)
+    
+
+
+    const handleRegister = e =>{
+        e.preventDefault();
+        const name = e.target.name.value
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        console.log(name,email,password)
+        // create user in firebase
+        createUser(email,password)
+        .then(Result=>{
+            console.log(Result.user)
+        })
+        .catch(error=>{
+            console.error(error)
+        })
+    }
     return (
         <div>
+            <Navbar></Navbar>
             <div className="mt-7">
             <h2 className="text-3xl text-center font-semibold">Please Register </h2>
-            <form className="lg:w-1/2 md:w-1/2 sm:w-1/2 w-1/2 mx-auto shadow-lg p-3 rounded-lg">
+            <form onSubmit={handleRegister} className="lg:w-1/2 md:w-1/2 sm:w-1/2 w-1/2 mx-auto shadow-lg p-3 rounded-lg">
 
                 <div className="form-control">
                     <label className="label">
@@ -32,7 +56,7 @@ const Register = () => {
                 </div>
 
             </form>
-            <p className="text-center mt-4">Already have account?please<Link to="/login"><button className="btn btn-ghost font-bold">Login</button></Link></p>
+            <p className="text-center mt-4">Already have account?please<Link to="/login"><button className="btn btn-ghost font-bold text-lime-700">Login</button></Link></p>
             </div>
         </div>
     );

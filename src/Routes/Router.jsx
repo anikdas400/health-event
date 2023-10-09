@@ -8,6 +8,8 @@ import Services from "../pages/Services";
 import About from "../pages/About";
 import Login from "../share/Login";
 import Register from "../share/Register";
+import Detail from "../pages/Detail";
+import PrivateRoute from "./PrivateRoute";
 
   const router = createBrowserRouter([
     {
@@ -16,12 +18,18 @@ import Register from "../share/Register";
       children:[
         {
             path:"/",
-            element:<Home></Home>
+            element:<Home></Home>,
+            loader:()=>fetch("blogs.json")
 
         },
         {
+          path:"/blogs/:id",
+          element:<PrivateRoute><Detail></Detail></PrivateRoute>,
+          loader:()=>fetch("../blogs.json")
+        },
+        {
             path:"/services",
-            element:<Services></Services>
+            element:<PrivateRoute><Services></Services></PrivateRoute>
 
         },
         {
